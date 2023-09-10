@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1694383039 source:c:\users\vladyslav\onedrive\Робочий стіл\c\triangle\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<math.h>
+
