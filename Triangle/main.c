@@ -13,17 +13,17 @@ int main()
 {
     float a, b, c;
 
-    char a_n[38]; //Ці масиви потрібні для тимчасового зберігання введення користувача. 38 відповідає максимальному розміру float
+    char a_n[38]; //These arrays are needed to temporarily store user input. 38 corresponds to the maximum size of float
     char b_n[38];
     char c_n[38];
 
-    bool check = false; //Змінна перевірки
+    bool check = false; //Г‡Г¬ВіГ­Г­Г  ГЇГҐГ°ГҐГўВіГ°ГЄГЁ
 
     while(check == false){
         printf("Please, enter the first side a: ");
-        fgets(a_n, 38, stdin); //зчитування рядка та його запис в масив.
-        fflush(stdin); //очистка бафферу, яка служить для того, що навіть якщо кількість знаків перевищить 38, вони не перейдуть автоматично в наступні введення
-        a = atof(a_n); //Перетворення на float. Читає масив лише до того моменту, поки не натикнеться на те, що не можна перетворити
+        fgets(a_n, 38, stdin); //reads a string and writes it to an array.
+        fflush(stdin); // buffer clearing, which is used to ensure that even if the number of characters exceeds 38, they will not automatically go to the next input
+        a = atof(a_n); //Converting to float. Reads the array only until it encounters something that cannot be converted
         printf("Please, enter the second side b: ");
         fgets(b_n, 38, stdin);
         b = atof(b_n);
