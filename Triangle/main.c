@@ -17,13 +17,13 @@ int main()
     char b_n[38];
     char c_n[38];
 
-    bool check = false; //Çì³ííà ïåðåâ³ðêè
+    bool check = false; //Simple check
 
     while(check == false){
         printf("Please, enter the first side a: ");
-        fgets(a_n, 38, stdin); //reads a string and writes it to an array.
-        fflush(stdin); // buffer clearing, which is used to ensure that even if the number of characters exceeds 38, they will not automatically go to the next input
+        fgets(a_n, 38, stdin); //reads a string and writes it to an array. 
         a = atof(a_n); //Converting to float. Reads the array only until it encounters something that cannot be converted
+        fflush(stdin); // buffer clearing, which is used to ensure that even if the number of characters exceeds 38, they will not automatically go to the next input
         printf("Please, enter the second side b: ");
         fgets(b_n, 38, stdin);
         b = atof(b_n);
