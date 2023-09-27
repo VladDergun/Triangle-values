@@ -21,17 +21,17 @@ int main()
 
     while(check == false){
         printf("Please, enter the first side a: ");
-        fgets(a_n, 38, stdin); //reads a string and writes it to an array. 
+        fgets(a_n, sizeof(a_n)-1, stdin); //reads a string and writes it to an array. 
         a = atof(a_n); //Converting to float. Reads the array only until it encounters something that cannot be converted
-        fflush(stdin); // buffer clearing, which is used to ensure that even if the number of characters exceeds 38, they will not automatically go to the next input
+       
         printf("Please, enter the second side b: ");
-        fgets(b_n, 38, stdin);
+        fgets(b_n, sizeof(b_n)-1, stdin);
         b = atof(b_n);
-        fflush(stdin);
+        
         printf("Please, enter the third side c:");
-        fgets(c_n, 38, stdin);
+        fgets(c_n, sizeof(c_n)-1, stdin);
         c = atof(c_n);
-        fflush(stdin);
+       
         if(a < 0 || b<0 || c<0){
             printf("One of the values is equal 0 or negative. Please, enter only positive numbers!\n Press any button to try again\n");
 
